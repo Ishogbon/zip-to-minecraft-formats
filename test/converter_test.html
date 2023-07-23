@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>converter test</title>
+  </head>
+  <body>
+    <form
+      action="../endpoints/zipToMcworld.php"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <label for="archive">zip to mcworld</label>
+      <input type="file" name="archive" accept=".zip" />
+      <input type="submit" value="submit" />
+    </form>
+    <form
+      action="../endpoints/zipToMcpack.php"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <label for="archive">zip to mcpack</label>
+      <input type="file" name="archive" accept=".zip" />
+      <input type="submit" value="submit" />
+    </form>
+    <form
+      action="../endpoints/zipToMcaddon.php"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <label for="archive">zip to mcaddon</label>
+      <input type="file" name="archive" accept=".zip" />
+      <input type="submit" value="submit" />
+    </form>
+    <form
+      action="../endpoints/zipToMctemplate.php"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <label for="archive">zip to mctemplate</label>
+      <input type="file" name="archive" accept=".zip" />
+      <input type="submit" value="submit" />
+    </form>
+    <form
+      action="../endpoints/mcToZip.php"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <label for="archive">mc formats to zip</label>
+      <input type="file" name="archive" accept=".mcworld, .mcpack, .mcaddon, .mctemplate" />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
